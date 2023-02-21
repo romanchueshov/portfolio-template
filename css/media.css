@@ -1,0 +1,184 @@
+@media(max-width: 960px){
+    .header{
+        padding: 0 20px;
+    }
+}
+
+/* Section Skills */
+@media(max-width: 800px){
+    .skills {
+        padding: 83px 0 98px 0;
+    }
+
+    .skills__text {
+        margin: 50px 0 0 0;
+    }
+
+    .skills__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .skills__item{
+        margin: 82px 0 0 0;
+    }
+
+    .skills__item:first-child{
+        margin: 0 0 0 0;
+    }
+}
+
+
+/* Tablet */
+@media(max-width: 600px){
+
+    /* Header */
+    .header__nav-link{
+        font-size: 14px;
+    }
+
+    .header__name-title{
+        font-size: 34px;
+    }
+
+    .header__name-preview{
+        font-size: 14px;
+    }
+
+    .header__lang{
+        font-size: 14px;
+    }
+
+    .header__img {
+        margin: 30px 0 0 0;
+    }
+
+
+
+    /* Section About me */
+    .about-me{
+        padding: 81px 0 76px 0;
+    }
+
+    .about-me__text{
+        padding: 0 30px;
+        margin: 30px auto 0 auto;
+    }
+
+
+    /* Footer */
+    .footer__social{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+/* Mobile */
+@media(max-width: 375px){
+
+    /* Header mobile */
+    .header__name{
+        position: relative;
+    }
+
+    .header__nav,
+    .header__lang{
+        display: none;
+    }
+
+    .header__name-title {
+        margin: 65px 0 0 0;
+    }
+
+    .header__name-description{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__name-preview{
+        margin: 23px 0 0 0;
+    }
+    
+    .burger__menu{
+        display: block;
+        position: absolute;
+        top: 75px;
+        right: 20px;
+    }
+
+    .header__img{
+        display: none;
+    }
+
+    .header__img-mobile{
+        display: block;
+        margin: 37px auto 0 auto;
+        background-image: url(../img/my-photo-mobile.jpg);
+    }
+
+
+
+    /* Mobile menu */
+    .mobile__menu-wrap{
+        width: 100%;
+        min-height: 100vh;
+        background-color: var(--white);
+        padding: 66px 26px;
+        border: 1px solid #000;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+    }
+
+    .mobile-menu__close-button{
+        display: block;
+        position: absolute;
+        background-size: cover;
+        cursor: pointer;
+        top: 72px;
+        right: 44px;
+    }
+
+    .mobile-menu__close-button img{
+        display: block;
+    }
+
+    .mobile__item{
+        margin: 68px 0 0 0;
+    }
+
+    .mobile__item:first-child{
+        margin: 0 0 0 0;
+    }
+
+    .mobile__item-link{
+        font-size: 34px;
+        color: var(--grey);
+    }
+
+    .mobile__item-link:hover{
+        color: var(--dark-gray);
+    }
+
+    .header__lang-mobile{
+        display: block;
+        position: absolute;
+        bottom: 57px;
+        right: 28px;
+        writing-mode: vertical-lr;
+        font-family: 'Gilroy-Bold';
+        font-size: 34px;
+    }
+
+
+    /* Section About me */
+    .about-me{
+        margin: 83px 0 0 0;
+    }
+}

@@ -1,0 +1,280 @@
+/* Подключение шрифтов */
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url(../fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(../fonts/Gilroy-Bold.ttf);
+}
+
+
+
+/* Общие стили */
+
+.hidden{
+    display: none;
+}
+
+body{
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+}
+
+.wrap{
+    max-width: 1445px;
+    margin: 0 auto;
+}
+
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+/* Запрет на прокручивание по вертикали в мобильном меню */
+.no-scroll{
+    overflow-y: hidden;
+}
+
+
+/* Переменные */
+:root{
+    --dark-gray: #070707;
+    --grey: #828282;
+    --super-light-grey: #F6F6F6;
+    --white: #ffffff;
+}
+
+
+/* Header */
+.header{
+    font-size: 18px;
+    color: var(--dark-gray);
+    background-color: var(--white);
+}
+
+.header__nav{
+    display: block;
+}
+
+.header__nav::after{
+    content: '';
+    display: block;
+    border-bottom: 1px solid #828282;
+
+}
+
+.header__nav-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+
+.header__nav-link{
+    color: var(--grey);
+}
+
+.header__nav-link:hover{
+    color: var(--dark-grey);
+}
+
+
+
+/* Section ФИО */
+.header__name-description{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header__name-title{
+    margin: 40px 0 0 0;
+    font-family: 'Gilroy-Bold';
+    font-size: 48px;
+}
+
+.header__lang{
+    writing-mode: vertical-lr;
+    font-family: 'Gilroy-Bold';
+    font-size: 16px;
+}
+
+.header__lang-active{
+    color: var(--grey);
+}
+
+.burger__menu{
+    display: none;
+}
+
+.header__img{
+    margin: 50px 0 0 0;
+}
+
+.header__img-mobile{
+    display: none;
+}
+
+
+
+/* Section About me */
+.about-me{
+    background-color: var(--super-light-grey);
+    margin: 104px 0 0 0;
+    padding: 120px 0 107px 0;
+}
+
+.main__title{
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    text-align: center;
+}
+
+.about-me__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 18px auto 0 auto;
+    max-width: 485px;
+    height: 218px;
+}
+
+.about-me__text p{
+    text-align: center;
+}
+
+
+
+/* Section Skills */
+.skills{
+    padding: 91px 0 110px 0;
+    background-color: var(--white);
+}
+
+.main__title{
+    text-align: center;
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+}
+
+.skills__text{
+    margin: 69px 0 0 0;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.skills__list{
+    display: flex;
+    justify-content: space-between;
+    margin: 87px 0 0 0;
+}
+
+.skills__item-pic{
+    display: block;
+    margin: 0 auto;
+}
+
+.skills__list-description{
+    font-family: 'Gilroy-Bold';
+    font-size: 14px;
+    text-align: center;
+    margin: 24px 0 40px 0;
+    color: var(--grey);
+}
+
+
+/* Section Portfolio */
+.portfolio{
+    background-color: var(--super-light-grey);
+    padding: 0 0 96px 0;
+}
+
+.portfolio__title{
+    padding: 81px 0 0 0;
+}
+
+.portfolio__list{
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio__item{
+    margin: 99px 0 0 0;
+    text-align: center;
+}
+
+.portfolio__item:first-child{
+    margin: 47px 0 0 0;
+}
+
+.portfolio__pic{
+    margin: 0 0 45px 0;
+}
+
+.portfolio__link{
+    text-decoration-line: underline !important;
+    color: var(--dark-gray);
+}
+
+.portfolio__link:hover{
+    text-decoration: none !important;
+    opacity: 0.7;
+}
+
+
+
+/* Section Contacts */
+
+.contacts{
+    background-color: var(--white);
+    margin: 114px 0 86px 0;
+}
+
+.contacts__description{
+    max-width: 275px;
+    height: auto;
+    margin: 42px auto 0 auto;
+    text-align: center;
+}
+
+.contacts__btn{
+    font-family: 'Gilroy-Bold';
+    margin: 30px 0 0 0;
+    padding: 13px 30px;
+    border-radius: 26px;
+    background-color: var(--dark-gray);
+    color: var(--white);
+}
+
+.contacts__btn:hover{
+opacity: 0.6;
+}
+
+
+
+/* Footer */
+.footer{
+    background-color: var(--white);
+}
+
+.footer__social{
+    display: flex;
+    justify-content: space-between;
+    max-width: 343px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.footer__social-link:hover{
+    opacity: 0.6;
+}
+
+.footer__copyright{
+    margin: 42px 0 123px 0;
+    text-align: center;
+    font-size: 14px;
+    color: var(--grey)
+}
+

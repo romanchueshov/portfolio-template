@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>Portfolio</title>
+</head>
+<body>
+
+        <!-- Header -->
+        <header class="header">
+            <div class="wrap">
+                <div class="container">
+
+                    <!-- Header Menu -->
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li><a class="header__nav-link" href="#">Home</a></li>
+                            <li><a class="header__nav-link" href="#">About me</a></li>
+                            <li><a class="header__nav-link" href="#">Skills</a></li>
+                            <li><a class="header__nav-link" href="#">Portfolio</a></li>
+                            <li><a class="header__nav-link" href="#">Contacts</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Mobile Menu -->
+                    <div class="mobile__menu-wrap hidden" id="mobileMenu">
+                        <nav class="mobile__menu">
+                            <button class="mobile-menu__close-button hidden" id="closeMobileMenu">
+                                <img src="./img/icons/x.svg" alt="Close-button" width="23" height="23">
+                            </button>
+                            <ul class="mobile__list">
+                                <li class="mobile__item"><a class="mobile__item-link" href="#">Home</a></li>
+                                <li class="mobile__item"><a class="mobile__item-link" href="#">About me</a></li>
+                                <li class="mobile__item"><a class="mobile__item-link" href="#">Skills</a></li>
+                                <li class="mobile__item"><a class="mobile__item-link" href="#">Portfolio</a></li>
+                                <li class="mobile__item"><a class="mobile__item-link" href="#">Contacts</a></li>
+                            </ul>
+                        </nav>
+                        <p class="header__lang-mobile">
+                            <span class="header__lang-active">RU</span> | ENG
+                        </p>
+                    </div>
+
+                    <!-- Section ФИО -->
+                    <section class="header__name">
+                        <div class="header__name-description">
+                            <h1 class="header__name-title">Denis<br> Novik</h1>
+                            <p class="header__name-preview">UX | UI designer<br> 24 years old, Minsk</p>
+                            <p class="header__lang">
+                                <span class="header__lang-active">RU</span> | ENG
+                            </p>
+                        </div>
+
+                        <!-- Burger button (Mobile) -->
+                        <button class="header-mobile__burger-menu" id="openMobileMenu">
+                            <img class="burger__menu" src="./img/icons/burger-menu.svg" alt="Mobile-menu" width="33" height="19">
+                        </button>
+
+
+                        <img class="header__img" src="./img/my-photo.jpg" alt="My-photo" width="943" height="387">
+                        <img class="header__img-mobile" src="./img/my-photo-mobile.jpg" alt="My-photo-mobile" width="316" height="478">
+                    </section>
+                </div>
+            </div>
+        </header>
+
+
+        <main>
+            
+            <!-- Section About me -->
+            <section class="about-me">
+                <div class="wrap">
+                    <h2 class="main__title">About me</h2>
+                    <div class="about-me__text">
+                        <p>Hi, I'm Denis – UX/UI designer from Minsk. 
+                            I'm interested in design and everything connected with it. </p>
+                        <p>I'm studying at courses "Web and mobile design 
+                            interfaces" in IT-Academy.</p>
+                        <p>Ready to implement excellent projects
+                            with wonderful people.</p>  
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Skills -->
+            <section class="skills">
+                <div class="wrap">
+                    <div class="container">
+                        <h2 class="main__title">Skills</h2>
+                        <p class="skills__text">I work in such programs as</p>
+                        <ul class="skills__list">
+                            <li class="skills__item">
+                                <img class="skills__item-pic" src="./img/icons/photoshop.svg" alt="Photoshop" width="89" height="88">
+                                <p class="skills__list-description">Adobe Photoshop</p>
+                                <img src="./img/icons/photoshop-stars.svg" alt="Photoshop skills" width="166" height="26">
+                            </li>
+                            <li class="skills__item">
+                                <img class="skills__item-pic" src="./img/icons/Illustrator.svg" alt="Illustrator" width="89" height="88">
+                                <p class="skills__list-description">Adobe Illustrator</p>
+                                <img src="./img/icons/Illustrator-stars.svg" alt="Illustrator skills" width="166" height="26">
+                            </li>
+                            <li class="skills__item">
+                                <img class="skills__item-pic" src="./img/icons/After-Effects.svg" alt="After Effects" width="89" height="88">
+                                <p class="skills__list-description">Adobe After Effects</p>
+                                <img src="./img/icons/photoshop-stars.svg" alt="After Effects skills" width="166" height="26">
+                            </li>
+                            <li class="skills__item">
+                                <img class="skills__item-pic" src="./img/icons/figma.svg" alt="Figma" width="58" height="88">
+                                <p class="skills__list-description">Figma</p>
+                                <img src="./img/icons/photoshop-stars.svg" alt="Figma skills" width="166" height="26">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Portfolio -->
+            <section class="portfolio">
+                <div class="wrap">
+                    <div class="container">
+                        <h2 class="main__title portfolio__title">Portfolio</h2>
+                        <ul class="portfolio__list">
+                            <li class="portfolio__item">
+                                <img class="portfolio__pic" src="./img/portfolio-01.jpg" alt="Mag" width="940" height="510">
+                                <a class="portfolio__link" href="#">Online fashion store - Homepage</a>
+                            </li>
+                            <li class="portfolio__item">
+                                <img class="portfolio__pic" src="./img/portfolio-02.jpg" alt="Reebok" width="940" height="510">
+                                <a class="portfolio__link" href="#">Reebok Store - Concept</a>
+                            </li>
+                            <li class="portfolio__item">
+                                <img class="portfolio__pic" src="./img/portfolio-03.jpg" alt="Brown" width="940" height="510">
+                                <a class="portfolio__link" href="#">Braun Landing Page - Concept</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Contacts -->
+            <section class="contacts">
+                <div class="wrap">
+                    <div class="container">
+                        <h2 class="main__title">Contacts</h2>
+                        <div class="contacts__description">
+                            <p>Want to know more or just chat? 
+                                You are welcome!
+                            </p>
+                            <button class="contacts__btn">Send message</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+
+        <footer class="footer">
+            <div class="wrap">
+                <div class="container">
+                    <div class="footer__social">
+                        <a class="footer__social-link" href="#">
+                            <img src="./img/icons/social/in.svg" alt="In" width="40" height="40">
+                        </a>
+                        <a class="footer__social-link" href="#">
+                            <img src="./img/icons/social/inst.svg" alt="Instagram" width="39" height="40">
+                        </a>
+                        <a class="footer__social-link" href="#">
+                            <img src="./img/icons/social/behance.svg" alt="Behance" width="40" height="40">
+                        </a>
+                        <a class="footer__social-link" href="#">
+                            <img src="./img/icons/social/world.svg" alt="World" width="39" height="40">
+                        </a>  
+                    </div>
+                    <p class="footer__copyright">Like me on <br>
+                        LinkedIn, Instagram, Behance, Dribble
+                    </p>
+                </div>
+            </div>
+
+        </footer>
+
+        <script src="./js/main.js"></script>
+</body>
+</html>

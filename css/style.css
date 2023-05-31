@@ -75,8 +75,22 @@ body{
     color: var(--grey);
 }
 
+.header__nav-link::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: var(--dark-gray);
+}
+
 .header__nav-link:hover{
     color: var(--dark-grey);
+}
+
+.header__nav-link:hover::after{
+    content: '';
+    width: 100%;
+    transition: 0.3s ease-out;
 }
 
 
